@@ -1,9 +1,3 @@
-# Ignore all files inside Images/ and uploads/ but track the folders themselves
-Images/*
-!Images/.gitkeep
-
-uploads/*
-!uploads/.gitkeep
 
 # Ignore node_modules completely
 node_modules/
