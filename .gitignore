@@ -1,5 +1,7 @@
 # Ignore contents of the Images and uploads directories, but not the directories themselves
 
 
+.gitignore
+
 # Ignore node_modules
 node_modules/
