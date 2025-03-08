@@ -135,8 +135,8 @@ This project is a web-based application that allows users to upload a PDF file a
 ![Flipbook Screenshot](Images/flip.png)
 _Flipbook with PDF Upload_
 
-![TextBook Screenshot](images/textbook.png)
-![Side-by-side Screenshot](images/side.png)
+![TextBook Screenshot](Images/textbook.png)
+![Side-by-side Screenshot](Images/side.png)
 _Text Display in Book Format_
 
 ---
