@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#uploadForm,
+#textInput,
+#displayText {
+  margin: 10px;
+}
+
+#textInput {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+#flipbook {
+  width: 80vw;
+  height: 90vh;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.page {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: grab;
+}
+
+#message {
+  font-size: x-large;
+  color: whitesmoke;
+}
+
+/* Book Layout */
+.book {
+  width: 600px;
+  height: 90vh;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: black;
+  display: none; /* Hidden by default */
+}
+
+.book .page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+}
+
+.book .page.active {
+  display: block;
+}
+
+.book .page p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#paginationControls {
+  margin-top: 20px;
+  display: none; /* Hidden by default */
+}
+
+#paginationControls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#pageCounter {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+/* 3D Raised Effect for textBook and flipbook */
+.book,
+#flipbook {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+    /* Bottom shadow */ 0 6px 6px rgba(0, 0, 0, 0.2),
+    /* Middle shadow */ 0 0 0 10px #f9f9f9, /* Inner border */ 0 0 0 12px #ccc; /* Outer border */
+  transform: perspective(1000px) rotateX(1deg) rotateY(1deg); /* 3D tilt */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
